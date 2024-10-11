@@ -32,7 +32,6 @@ Mother's Status: Whether the mother is alive. Enter "y" for yes or "n" for no.
 Father's Status: Whether the father is alive. Enter "y" for yes or "n" for no.
     Example: "y"
 
-        ![image](https://github.com/user-attachments/assets/008de017-5701-42c5-86fd-e96e8ae409a9)
-
-        ![image](https://github.com/user-attachments/assets/d3a6da50-66e5-4a98-933c-833971855375)
+![image](https://github.com/user-attachments/assets/008de017-5701-42c5-86fd-e96e8ae409a9)
+![image](https://github.com/user-attachments/assets/d3a6da50-66e5-4a98-933c-833971855375)
 
