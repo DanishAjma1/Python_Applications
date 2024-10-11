@@ -36,9 +36,9 @@ When you run the application, it will ask for the following inputs:
     Father's Status: Whether the father is alive. (y for yes, n for no).
 Here are snaps of Application Output..
 
-file:///home/danish/Pictures/Screenshots/Screenshot%20from%202024-10-11%2016-41-04.png
+![Screenshot from 2024-10-11 16-41-17](https://github.com/user-attachments/assets/2223d362-f0d3-4403-8b5b-8e8d4b0b5270)
 
-file:///home/danish/Pictures/Screenshots/Screenshot%20from%202024-10-11%2016-41-17.png
+![Screenshot from 2024-10-11 16-41-04](https://github.com/user-attachments/assets/fc761ca5-8348-4f5a-9957-3d2ce9606da0)
 
 
 Unit Testing
