@@ -1,37 +1,112 @@
-This application calculates the share of inheritance for sons, daughters, and other family members based on Islamic inheritance rules. It takes various inputs, 
-such as the total inheritance amount, the number of sons and daughters, and the status of the spouse, mother, and father, and computes the respective shares.
+Inheritance Shares Calculator
 
+This application calculates the inheritance shares for sons, daughters, and other family members based on the total inheritance amount and family structure.
 Features
 
-    Calculates inheritance shares for sons, daughters, spouse (wives), mother, and father.
-    Handles multiple wives if present.
-    Error handling for invalid inputs (non-numeric values).
-    Clone or download the code to your local machine.
+    Inheritance calculation for sons, daughters, wife, mother, and father.
+    Error handling for invalid input types.
+    Unit testing is included to ensure correctness of the logic.
 
-Input
-When you run the application, it will prompt you to input several details:
+Requirements
 
-Inheritance Amount: The total amount left behind by the deceased (float).
-    Example: 100000.00
+    Python 3.x
+    unittest for unit testing.
 
-Number of Sons: The number of sons the deceased had (integer).
-    Example: 2
+How to Run the Application
 
-Number of Daughters: The number of daughters the deceased had (integer).
-    Example: 3
+    Run the Main Application:
+To execute the main inheritance calculator, follow the steps below:
+python main.py
 
-Spouse Status: Whether the spouse (wife/wives) is alive. Enter "y" for yes or "n" for no.
-    Example: "y"
+Run Unit Tests:
 
-Number of Wives: If the spouse is alive, enter the number of wives (integer).
-    Example: 1
+You can also run the unit tests to verify that the logic is functioning correctly.
 
-Mother's Status: Whether the mother is alive. Enter "y" for yes or "n" for no.
-    Example: "n"
+To run the tests, use the following command:
+    python -m unittest test_calculator.py
 
-Father's Status: Whether the father is alive. Enter "y" for yes or "n" for no.
-    Example: "y"
+When you run the application, it will ask for the following inputs:
 
-![image](https://github.com/user-attachments/assets/008de017-5701-42c5-86fd-e96e8ae409a9)
-![image](https://github.com/user-attachments/assets/d3a6da50-66e5-4a98-933c-833971855375)
+    Inheritance Amount: The total amount left by the deceased (float).
+    Number of Sons: Number of sons (integer).
+    Number of Daughters: Number of daughters (integer).
+    Spouse Status: Whether the spouse is alive. (y for yes, n for no).
+    Number of Wives: If the spouse is alive, you need to input the number of wives.
+    Mother's Status: Whether the mother is alive. (y for yes, n for no).
+    Father's Status: Whether the father is alive. (y for yes, n for no).
+Here are snaps of Application Output..
 
+file:///home/danish/Pictures/Screenshots/Screenshot%20from%202024-10-11%2016-41-04.png
+
+file:///home/danish/Pictures/Screenshots/Screenshot%20from%202024-10-11%2016-41-17.png
+
+
+Unit Testing
+
+Unit tests are written using Python's unittest framework to verify the correctness of the share calculation logic. The tests cover the following scenarios:
+
+    Spouse With Sons or Daughters:
+        Tests the calculation when the spouse, mother, and father are involved along with sons and daughters.
+
+    Spouse Without Sons or Daughters:
+        Tests the calculation in the absence of sons or daughters, but with the spouse, mother, and father.
+
+    Helper Methods:
+        Tests utility methods such as isFatherAlive, isMotherAlive, and isWifeAlive.
+
+Sample Test Code
+
+python
+
+import unittest
+import spouseOrParentShares as sp
+import CheckPart as cp
+
+class Tests(unittest.TestCase):
+    def setUp(self):
+        print("Setup Phase")
+    
+    def tearDown(self):
+        print("Tear Down Phase")
+    
+    def testSpouseWithSonsOrDaughters(self):
+        result = sp.SpouseWithSonsOrDaughters(1200, "n", "n", 1)
+        self.assertEquals(result, 1000)
+        result = sp.SpouseWithSonsOrDaughters(1200, "y", "n", 1)
+        self.assertEquals(result, 875)
+        result = sp.SpouseWithSonsOrDaughters(1200,"n","y",1)
+        self.assertEquals(result,875)
+
+    def testSpouseWithoutSonsOrDaughters(self):
+        result = sp.SpouseWithSonsOrDaughters(1200,"n","n",1)
+        self.assertEquals(result,1000)
+        result = sp.SpouseWithSonsOrDaughters(1200,"y","n",1)
+        self.assertEquals(result,875)
+        result = sp.SpouseWithSonsOrDaughters(1200,"n","y",1)
+        self.assertEquals(result,875)
+
+        # with self.assertRaises(ValueError):
+        #     result = sp.SpouseWithSonsOrDaughters(1200, "n", "y", 1)
+        #     self.assertEquals(result, 850)
+
+    def testFatherAlive(self):
+        self.assertEqual(cp.isFatherAlive("y"),True)
+        self.assertEquals(cp.isWifeAlive(2),True)
+        self.assertEquals(cp.isMotherAlive("n"),False)
+
+if __name__ == '__main__':
+    unittest.main()
+    
+You have to write just file's name with extension to test these modules like .
+        python test_Calculate.py
+Here are some snaps of Unit Testing..
+
+![image](https://github.com/user-attachments/assets/5f929c52-d4d5-4b8b-94e7-b718ed4c887d)
+
+![image](https://github.com/user-attachments/assets/553651c2-2d34-4d20-9f9a-071e760cb3d7)
+
+![image](https://github.com/user-attachments/assets/a9ae3dbd-ab1c-4f0c-929b-562172dac07e)
+
+
+
+        
