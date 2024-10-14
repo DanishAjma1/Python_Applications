@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf63aece-b0ee-4ca0-a1f8-fbfe8debce44" name="Changes" comment="Inheritance amount for sons and daughters">
-      <change beforePath="$PROJECT_DIR$/.idea/SharesCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SharesCalculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MockTesting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UnitTesting.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +44,12 @@
     &quot;assignee&quot;: &quot;DanishAjma1&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DanishAjma1/Python_Applications.git",
-    "accountId": "df76e4ae-ba41-43a8-b595-4cd28f0af2e4"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DanishAjma1/Python_Applications.git&quot;,
+    &quot;accountId&quot;: &quot;df76e4ae-ba41-43a8-b595-4cd28f0af2e4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -67,7 +67,7 @@
     "Python.app.executor": "Run",
     "Python.spouseOrParentShares.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "task"
+    "git-widget-placeholder": "#4 on Tasks"
   }
 }]]></component>
   <component name="SharedIndexes">
