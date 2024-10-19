@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
-from AreFatherMotherWifeAlive import isFatherAlive
-from SpouseAndParentSharesCalculation import calculate_and_deduct,SpouseWithSonsOrDaughters
+from CheckPart import isFatherAlive
+from spouseOrParentShares import calculate_and_deduct,SpouseWithSonsOrDaughters
 
 
 class TestFamilyStatus(unittest.TestCase):

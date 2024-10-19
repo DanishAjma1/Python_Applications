@@ -1,7 +1,7 @@
 # Here is the Shares calculator used for calculate the share for sons and daughter from the total inheritance amount..
 
 #This is the main file of this application..
-import SharesCalculation as cal
+import Calculation as cal
 
 try:    #to handle the error
     inheritance_amount = float(input("Enter the total inheritance amount that a men leave after deceased..?(float) "))     # get the inherited amount
