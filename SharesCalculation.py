@@ -1,5 +1,5 @@
-import output as op
-import spouseOrParentShares as sps
+import ApplicationOutput as op
+import SpouseAndParentSharesCalculation as sps
 
 def calculate(amount,sons,daughters,mother,father,wife):
     if amount > 0:

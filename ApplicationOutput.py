@@ -1,4 +1,4 @@
-import  CheckPart as cp
+import  AreFatherMotherWifeAlive as cp
 
 def show(sons,daughters,amount_per_share):
     if sons and daughters:

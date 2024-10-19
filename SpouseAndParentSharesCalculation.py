@@ -1,5 +1,5 @@
-import CheckPart as cp
-import output as op
+import AreFatherMotherWifeAlive as cp
+import ApplicationOutput as op
 
 
 # Helper function to calculate and subtract amount based on a given ratio
