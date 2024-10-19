@@ -1,0 +1,18 @@
+UNIT_TESTING
+
+Unit testing focus on the single unit_test like test a single unit or method to check if it is working properly and when i will it
+any parameter than is it fulfilling our expections. Are it overcome the actual output it must generate on given parameters.
+By using Unit testing we can find bugs in early stage of developement and can easily fix that bug.
+When we using unit testing, we can refector code with much confidence, knowing if there is any error the testing will catch it..
+
+
+MOCK_TESING
+
+In Mock_testing we can also check the methods isolating from its dependencies like APIs,database ETC.
+This isolating means you can focus on the single unit working without worrying about its external factors.
+Mocks enable you to simulate specific behaviors and scenarios, such as error conditions or responses from dependencies, which
+might be difficult to reproduce with real objects.
+Tests that rely on mocks typically run faster because they avoid the overhead of actual network calls or database interactions.
+While unit tests focus on individual components, mocks help facilitate integration testing by allowing you to substitute
+complex or time-consuming components with simpler mock implementations.
+
