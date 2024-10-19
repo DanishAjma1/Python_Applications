@@ -15,4 +15,4 @@ def calculate(amount,sons,daughters,mother,father,wife):
         print("There is not amount to be divided between sons or daughters..")
     else:
         print("The Amount must be grater than or equal to zero")
-        exit()
+        exit(0)
