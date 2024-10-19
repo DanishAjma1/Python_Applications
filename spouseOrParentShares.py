@@ -42,7 +42,6 @@ def SpouseWithSonsOrDaughters(amount, mother, father, wife):
         wife_amount, amount = calculate_and_deduct(amount, 1 / 6, wife)
     else:
         print("If there is nothing for you calculate the inheritance what are you doing here..?")
-    
     # Output the calculated shares
     op.partOfSpouseAndParents(mother_amount, father_amount, wife_amount,father,wife,mother)
     return amount

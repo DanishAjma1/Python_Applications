@@ -1,4 +1,3 @@
-
 def isFatherAlive(father):
     if father == "y":
         return  True

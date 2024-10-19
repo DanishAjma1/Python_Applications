@@ -1,6 +1,6 @@
 # Here is the Shares calculator used for calculate the share for sons and daughter from the total inheritance amount..
 
-# This is the main file of this application..
+#This is the main file of this application..
 import Calculation as cal
 
 try:    #to handle the error
