@@ -1,28 +1,32 @@
-# Here is the Shares calculator used for calculate the share for sons and daughter from the total inheritance amount..
+# Shares calculator used to calculate the share for sons and daughters from the total inheritance amount.
+# This is the main file of this application.
 
-#This is the main file of this application..
-import Calculation as cal
+import SharesCalculation as cal
 
-try:    #to handle the error
-    inheritance_amount = float(input("Enter the total inheritance amount that a men leave after deceased..?(float) "))     # get the inherited amount
-    sons = int(input("How much sons he have..?(int) "))    #sons eligible for the inherited amount
-    daughters = int(input("How much daughters he have..?(int) "))      #daughters eligible for the inherited amount
-    wifes= input("Does his spouse alive..? y for yes n for no : ")
+try:
+    # Get the inherited amount and details about family members
+    inheritance_amount = float(input("Enter the total inheritance amount that a man left after deceased (float): "))
+    sons = int(input("How many sons does he have (int)? "))
+    daughters = int(input("How many daughters does he have (int)? "))
+    spouse_alive = input("Is his spouse alive? (y for yes, n for no): ").lower()
 
     wife = 0
-    if wifes == "y":
-        wife = int(input("how much wives he have..? "))
+    if spouse_alive == "y":
+        wife = int(input("How many wives does he have? "))
 
-    mother= input("Does his mother alive..? y for yes n for no : ")
-    father= input("Does his father alive..? y for yes n for no : ")
+    mother_alive = input("Is his mother alive? (y for yes, n for no): ").lower()
+    father_alive = input("Is his father alive? (y for yes, n for no): ").lower()
 
-    cal.calculate(inheritance_amount,sons, daughters,mother, father, wife)    #function...
+    # Call the calculate function from the Calculation module
+    cal.calculate(inheritance_amount, sons, daughters, mother_alive, father_alive, wife)
 
-    sons = int(sons)  # check either the sons and the following variables are integer?
+    # Ensure the input variables are valid integers or floats
+    sons = int(sons)
     daughters = int(daughters)
-    inheritance_amount = int(inheritance_amount)
-    wife= int(wife)
+    inheritance_amount = float(inheritance_amount)
+    wife = int(wife)
 
-except ValueError:      #Catch block
-    print("The values must be an int or float!")
-    exit()  #exit the application
+except ValueError:
+    # Handle invalid input values
+    print("The values must be an integer or a float!")
+    exit()  # Exit the application

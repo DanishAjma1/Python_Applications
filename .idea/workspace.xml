@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf63aece-b0ee-4ca0-a1f8-fbfe8debce44" name="Changes" comment="Inheritance amount for sons and daughters">
-      <change beforePath="$PROJECT_DIR$/.idea/SharesCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SharesCalculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationOutput.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationOutput.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AreFatherMotherWifeAlive.py" beforeDir="false" afterPath="$PROJECT_DIR$/AreFatherMotherWifeAlive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MockTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/MockTesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SharesCalculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/SharesCalculation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpouseAndParentSharesCalculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpouseAndParentSharesCalculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,10 +69,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in MockTesting.py.executor": "Debug",
+    "Python tests.Python tests in UnitTesting.py.executor": "Run",
+    "Python.AreFatherMotherWifeAlive.executor": "Debug",
     "Python.Calculation.executor": "Run",
+    "Python.SpouseAndParentSharesCalculation.executor": "Debug",
     "Python.app.executor": "Run",
     "Python.spouseOrParentShares.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "#4 on Tasks"
   }
 }]]></component>
   <component name="SharedIndexes">
