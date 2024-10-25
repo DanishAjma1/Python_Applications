@@ -1,6 +1,6 @@
-import AreFatherMotherWifeAlive as cp
+import shares_calculator_application_main as application
 
-def show(sons, daughters, amount_per_share):
+def application_output(sons, daughters, amount_per_share):
     if sons and daughters:
         son_amount = amount_per_share * 2  # Each son's amount
         daughter_amount = amount_per_share  # Each daughter's amount
@@ -18,12 +18,12 @@ def show(sons, daughters, amount_per_share):
     else:
         print("This amount can be divided among the poor and those experiencing poverty.")
 
-def part_of_spouse_and_parents(mother_amount, father_amount, wife_amount, father, wife, mother, amount=0):
-    if cp.is_mother_alive(mother):
+def diplay_shares_of_spouse_and_parents(mother_amount, father_amount, wife_amount, father, wife, mother, amount=0):
+    if mother:
         print(f"Mother will get the amount: {mother_amount} Rs.")
-    if cp.is_father_alive(father):
+    if father:
         print(f"Father will get the amount: {father_amount} Rs.")
-    if cp.is_wife_alive(wife):
+    if wife:
         print(f"Each wife will get the amount: {wife_amount} Rs.")
     if amount != 0:
         print(f"Remaining amount of inheritance: {amount} Rs.")
