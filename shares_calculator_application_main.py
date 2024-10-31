@@ -118,7 +118,7 @@ def main():
         inheritance_amount = float(input("Enter the total inheritance amount that a man left after deceased...: "))
         sons = int(input("How many sons does he have..? "))
         daughters = int(input("How many daughters does he have..? "))
-        spouse_alive = input("Is his spouse alive? (y for yes, n for no): ").lower()
+        spouse_alive = input("Is his wife alive? (y for yes, n for no): ").lower()
 
         wife = 0
         if spouse_alive == "y":
@@ -141,7 +141,7 @@ def main():
 
     except ValueError:
         # Handle invalid input values
-        print("The values must be an integer or a float!")
+        print("Enter valid data..!")
         exit()  # Exit the application
 
 if __name__ == "__main__":
